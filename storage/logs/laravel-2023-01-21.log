@@ -1,0 +1,136 @@
+[2023-01-21 05:12:11] local.DEBUG: Message-ID: <d14d84dd2d358a6cd1d6c7942b10748a@localhost>
+Date: Sat, 21 Jan 2023 05:12:11 +0000
+Subject: Subscription Upgrade
+From: codecanor <sihoh71266@unomail9.com>
+To: vendor <vendor@gmail.com>
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Subscription Upgrade</title>
+</head>
+<body class="preload dashboard-upload">
+<p><strong>Thanks for your subscription</strong></p>
+<p><span style="color: #212529; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; font-size: 16px; text-transform: capitalize; background-color: #ffffff;">Subscription Name :&nbsp;</span><span style="background-color: #ffffff; color: #212529; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; font-size: 16px;">Ultimate</span></p>
+<p><span style="color: #212529; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; font-size: 16px; text-transform: capitalize; background-color: #ffffff;">Duration :&nbsp;</span><span style="background-color: #ffffff; color: #212529; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; font-size: 16px;">6 Month</span></p>
+<p><span style="color: #212529; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; font-size: 16px; text-transform: capitalize; background-color: #ffffff;">Price :&nbsp;</span><span style="background-color: #ffffff; color: #212529; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; font-size: 16px;">USD </span><span style="background-color: #ffffff; color: #212529; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; font-size: 16px;">250</span></p>
+<p><span style="color: #212529; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; font-size: 16px; text-transform: capitalize; background-color: #ffffff;">Date :&nbsp;</span><span style="background-color: #ffffff; color: #212529; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; font-size: 16px;">2023-07-21</span></p>
+<p>&nbsp;</p></body>
+</html>  
+[2023-01-21 07:12:37] local.DEBUG: Message-ID: <0bde441b8c2383ddb1fcc3f251c096e3@localhost>
+Date: Sat, 21 Jan 2023 07:12:36 +0000
+Subject: Item Purchase Notifications
+From: codecanor <sihoh71266@unomail9.com>
+To: codecanor <codecanor@gmail.com>
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Item Purchase Notifications</title>
+</head>
+<body class="preload dashboard-upload">
+<h3>Thank you for your order</h3>
+<p><strong>Buyer Details</strong>&nbsp;</p>
+<p>Name : codecanor</p>
+<p>Email : codecanor@gmail.com</p>
+<p><strong>Order Details</strong></p>
+<p>Order ID : #151803</p>
+<p>Amount : USD 35</p>
+<p>Payment Type : aamarpay</p>
+<p>Purchased Date : 2023-01-21</p>
+<p>Payment Status : completed</p></body>
+</html>  
+[2023-01-21 07:12:37] local.DEBUG: Message-ID: <88ed071f6f7aa778f1cc0cbb319768b6@localhost>
+Date: Sat, 21 Jan 2023 07:12:37 +0000
+Subject: New Payment Approved
+From: codecanor <sihoh71266@unomail9.com>
+To: vendor <vendor@gmail.com>
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>New Payment Approved</title>
+</head>
+<body class="preload dashboard-upload">
+<p>New payment approved to released by admin. Please check your earning balance on your account</p>
+<p>your payment is : 35 USD</p></body>
+</html>  
+[2023-01-21 09:49:43] local.DEBUG: Message-ID: <3f13ff16ec2226ff28711d238923bdaf@localhost>
+Date: Sat, 21 Jan 2023 09:49:42 +0000
+Subject: Subscription Upgrade
+From: codecanor <sihoh71266@unomail9.com>
+To: vendor <vendor@gmail.com>
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Subscription Upgrade</title>
+</head>
+<body class="preload dashboard-upload">
+<p><strong>Thanks for your subscription</strong></p>
+<p><span style="color: #212529; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; font-size: 16px; text-transform: capitalize; background-color: #ffffff;">Subscription Name :&nbsp;</span><span style="background-color: #ffffff; color: #212529; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; font-size: 16px;">Popular</span></p>
+<p><span style="color: #212529; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; font-size: 16px; text-transform: capitalize; background-color: #ffffff;">Duration :&nbsp;</span><span style="background-color: #ffffff; color: #212529; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; font-size: 16px;">1 Year</span></p>
+<p><span style="color: #212529; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; font-size: 16px; text-transform: capitalize; background-color: #ffffff;">Price :&nbsp;</span><span style="background-color: #ffffff; color: #212529; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; font-size: 16px;">USD </span><span style="background-color: #ffffff; color: #212529; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; font-size: 16px;">450</span></p>
+<p><span style="color: #212529; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; font-size: 16px; text-transform: capitalize; background-color: #ffffff;">Date :&nbsp;</span><span style="background-color: #ffffff; color: #212529; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; font-size: 16px;">2024-01-21</span></p>
+<p>&nbsp;</p></body>
+</html>  
+[2023-01-21 09:56:07] local.DEBUG: Message-ID: <e5aee69dbda60fd6d2803b93f921565f@localhost>
+Date: Sat, 21 Jan 2023 09:56:07 +0000
+Subject: Subscription Upgrade
+From: codecanor <sihoh71266@unomail9.com>
+To: vendor <vendor@gmail.com>
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Subscription Upgrade</title>
+</head>
+<body class="preload dashboard-upload">
+<p><strong>Thanks for your subscription</strong></p>
+<p><span style="color: #212529; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; font-size: 16px; text-transform: capitalize; background-color: #ffffff;">Subscription Name :&nbsp;</span><span style="background-color: #ffffff; color: #212529; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; font-size: 16px;">Ultimate</span></p>
+<p><span style="color: #212529; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; font-size: 16px; text-transform: capitalize; background-color: #ffffff;">Duration :&nbsp;</span><span style="background-color: #ffffff; color: #212529; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; font-size: 16px;">6 Month</span></p>
+<p><span style="color: #212529; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; font-size: 16px; text-transform: capitalize; background-color: #ffffff;">Price :&nbsp;</span><span style="background-color: #ffffff; color: #212529; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; font-size: 16px;">USD </span><span style="background-color: #ffffff; color: #212529; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; font-size: 16px;">250</span></p>
+<p><span style="color: #212529; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; font-size: 16px; text-transform: capitalize; background-color: #ffffff;">Date :&nbsp;</span><span style="background-color: #ffffff; color: #212529; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; font-size: 16px;">2023-07-21</span></p>
+<p>&nbsp;</p></body>
+</html>  
+[2023-01-21 10:29:06] local.ERROR: Cannot redeclare Fickrr\Http\Controllers\ItemController::aamarpay_success() {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot redeclare Fickrr\\Http\\Controllers\\ItemController::aamarpay_success() at D:\\xampp\\htdocs\\fickrr\\app\\Http\\Controllers\\ItemController.php:6063)
+[stacktrace]
+#0 {main}
+"} 
+[2023-01-21 10:34:14] local.DEBUG: Message-ID: <93fff9a40b8d94bfaeb6b1dd490ad1da@localhost>
+Date: Sat, 21 Jan 2023 10:34:13 +0000
+Subject: New Deposit Details
+From: codecanor <sihoh71266@unomail9.com>
+To: vendor <vendor@gmail.com>
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>New Deposit Details</title>
+</head>
+<body class="preload dashboard-upload">
+<p><strong>Given below the deposit details</strong></p>
+<p>Deposit Amount :&nbsp;<span style="background-color: #ffffff; color: #212529; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; font-size: 16px;">10&nbsp;</span><span style="background-color: #ffffff; color: #212529; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; font-size: 16px;">USD</span></p>
+<p><span style="background-color: #ffffff;"><span style="color: #212529; font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;">Payment Type :&nbsp;</span></span><span style="background-color: #ffffff; color: #212529; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; font-size: 16px;">aamarpay</span></p>
+<p><span style="background-color: #ffffff;"><span style="color: #212529; font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;">Payment ID :&nbsp;</span></span><span style="background-color: #ffffff; color: #212529; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; font-size: 16px;">AAM1674297251122587</span></p>
+<p><span style="background-color: #ffffff;"><span style="color: #212529; font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;">Payment Date :&nbsp;</span></span><span style="background-color: #ffffff; color: #212529; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; font-size: 16px;">2023-01-21</span></p>
+<p>&nbsp;</p></body>
+</html>  
