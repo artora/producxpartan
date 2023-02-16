@@ -72,7 +72,7 @@ Route::group(['middleware' => ['is_admin', 'HtmlMinifier', 'cache']], function (
 	
 	Route::get('/admin/edit-profile', 'Admin\MembersController@edit_profile');
 	Route::post('/admin/edit-profile', ['as' => 'admin.edit-profile','uses'=>'Admin\MembersController@update_profile']);
-	/* edit profile */   
+	/* edit profile */
 	
 	
 	/* settings */
@@ -80,7 +80,7 @@ Route::group(['middleware' => ['is_admin', 'HtmlMinifier', 'cache']], function (
 	Route::get('/admin/general-settings', 'Admin\SettingsController@general_settings');
 	Route::post('/admin/general-settings', ['as' => 'admin.general-settings','uses'=>'Admin\SettingsController@update_general_settings']);
 	
-	
+
 	
 	Route::get('/admin/email-settings', 'Admin\SettingsController@email_settings');
 	Route::post('/admin/email-settings', ['as' => 'admin.email-settings','uses'=>'Admin\SettingsController@update_email_settings']);
@@ -170,6 +170,15 @@ Route::group(['middleware' => ['is_admin', 'HtmlMinifier', 'cache']], function (
 	Route::post('/admin/edit-subcategory', ['as' => 'admin.edit-subcategory','uses'=>'Admin\CategoryController@update_subcategory']);
 	/* subcategory */
 	
+		/* Home Slider */
+
+		Route::get('/admin/home', 'Admin\HomeSliderController@home_slider');
+		Route::get('/admin/add-home-slider', 'Admin\HomeSliderController@add_home_slider')->name('admin.add-home-slider');
+		Route::post('/admin/add-category', 'Admin\HomeSliderController@save_category');
+		Route::get('/admin/category/{cat_id}', 'Admin\HomeSliderController@delete_category');
+		Route::get('/admin/edit-category/{cat_id}', 'Admin\HomeSliderController@edit_category')->name('admin.edit-home-slider');
+		Route::post('/admin/edit-category', ['as' => 'admin.edit-home-slider','uses'=>'Admin\HomeSliderController@update_category']);
+		/* Home Slider */
 	
 	
 	/* blog */

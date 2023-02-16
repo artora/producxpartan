@@ -2518,6 +2518,4 @@ class SettingsController extends Controller
 	
   /* hightlights */	
 	
-	
-	
 }

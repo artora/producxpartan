@@ -39,6 +39,7 @@
                             <li><i class="fa fa-gear"></i><a href="{{ url('/admin/social-settings') }}">{{ __('Social Settings') }}</a></li>
                             <li><i class="fa fa-gear"></i><a href="{{ url('/admin/limitation-settings') }}">{{ __('Limitation Settings') }}</a></li>
                             <li><i class="fa fa-gear"></i><a href="{{ url('/admin/preferred-settings') }}">{{ __('Preferred Settings') }}</a></li>
+                            <li><i class="fa fa-gear"></i><a href="{{ url('/admin/home') }}">{{ __('Home Slider') }}</a></li>
                         </ul>
                     </li>
                    @endif
