@@ -120,9 +120,24 @@ class CategoryController extends Controller
 		else
 		{
 		
-		
-		 
-		$data = array('category_name' => $category_name, 'category_slug' => $category_slug, 'category_status' => $category_status, 'menu_order' => $menu_order);
+			if ($request->hasFile('category_icon')) {
+		     
+			// 	Settings::dropFavicon($sid); 
+			   
+				echo $image = $request->file('category_icon');
+				$img_name = time() . '.'.$image->getClientOriginalExtension();
+				$destinationPath = public_path('/storage/settings');
+				$imagePath = $destinationPath. "/".  $img_name;
+				$image->move($destinationPath, $img_name);
+				echo $cate_image = $img_name;
+
+			  }
+			  else
+			  {
+				 $cate_image = $request->input('category_icon');
+			  }
+			//  echo 'gfgdfgfdgdfgdfgdfgdfg'; die;
+		$data = array('category_name' => $category_name, 'category_slug' => $category_slug, 'category_status' => $category_status, 'category_image' => $cate_image, 'menu_order' => $menu_order);
         Category::insertcategoryData($data);
 		return redirect('/admin/category')->with('success', 'Insert successfully.');
             

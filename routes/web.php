@@ -174,10 +174,10 @@ Route::group(['middleware' => ['is_admin', 'HtmlMinifier', 'cache']], function (
 
 		Route::get('/admin/home', 'Admin\HomeSliderController@home_slider');
 		Route::get('/admin/add-home-slider', 'Admin\HomeSliderController@add_home_slider')->name('admin.add-home-slider');
-		Route::post('/admin/add-category', 'Admin\HomeSliderController@save_category');
+		//Route::post('/admin/add-category', 'Admin\HomeSliderController@save_category');
 		Route::get('/admin/category/{cat_id}', 'Admin\HomeSliderController@delete_category');
-		Route::get('/admin/edit-category/{cat_id}', 'Admin\HomeSliderController@edit_category')->name('admin.edit-home-slider');
-		Route::post('/admin/edit-category', ['as' => 'admin.edit-home-slider','uses'=>'Admin\HomeSliderController@update_category']);
+		//Route::get('/admin/edit-category/{cat_id}', 'Admin\HomeSliderController@edit_category')->name('admin.edit-home-slider');
+		//Route::post('/admin/edit-category', ['as' => 'admin.edit-home-slider','uses'=>'Admin\HomeSliderController@update_category']);
 		/* Home Slider */
 	
 	

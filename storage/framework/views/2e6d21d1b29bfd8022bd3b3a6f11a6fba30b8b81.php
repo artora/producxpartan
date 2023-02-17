@@ -1,3 +1,4 @@
+<?php echo $__env->make('version', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 <!doctype html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
@@ -8,26 +9,26 @@
 
 <head>
     
-    @include('admin.stylesheet')
+    <?php echo $__env->make('admin.stylesheet', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 </head>
 
 <body>
     
-    @include('admin.navigation')
+    <?php echo $__env->make('admin.navigation', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 
     <!-- Right Panel -->
-    @if(in_array('items',$avilable))
+    <?php if(in_array('deposit',$avilable)): ?>
     <div id="right-panel" class="right-panel">
 
         
-                       @include('admin.header')
+                       <?php echo $__env->make('admin.header', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
                        
 
         <div class="breadcrumbs">
             <div class="col-sm-4">
                 <div class="page-header float-left">
                     <div class="page-title">
-                        <h1>{{ __('Add Category') }}</h1>
+                        <h1><?php echo e(__('Add Price')); ?></h1>
                     </div>
                 </div>
             </div>
@@ -38,59 +39,65 @@
             </div>
         </div>
         
-        @if (session('success'))
+        <?php if(session('success')): ?>
     <div class="col-sm-12">
         <div class="alert  alert-success alert-dismissible fade show" role="alert">
-            {{ session('success') }}
+            <?php echo e(session('success')); ?>
+
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
         </div>
     </div>
-@endif
+<?php endif; ?>
 
-@if (session('error'))
+<?php if(session('error')): ?>
     <div class="col-sm-12">
         <div class="alert  alert-danger alert-dismissible fade show" role="alert">
-            {{ session('error') }}
+            <?php echo e(session('error')); ?>
+
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
         </div>
     </div>
-@endif
+<?php endif; ?>
 
 
-@if ($errors->any())
+<?php if($errors->any()): ?>
     <div class="col-sm-12">
      <div class="alert  alert-danger alert-dismissible fade show" role="alert">
-     @foreach ($errors->all() as $error)
+     <?php $__currentLoopData = $errors->all(); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $error): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
       
-         {{$error}}
+         <?php echo e($error); ?>
+
       
-     @endforeach
+     <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
      </div>
     </div>   
- @endif
+ <?php endif; ?>
 
         <div class="content mt-3">
             <div class="animated fadeIn">
                 <div class="row">
 
                     <div class="col-md-12">
-                    @if($demo_mode == 'on')
-                           @include('admin.demo-mode')
-                           @else
-                       <form action="{{ route('admin.add-category') }}" method="post" id="setting_form" enctype="multipart/form-data">
+                       <?php if($demo_mode == 'on'): ?>
+                           <?php echo $__env->make('admin.demo-mode', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+                           <?php else: ?>
+                       <form action="<?php echo e(route('admin.add-deposit')); ?>" method="post"  id="checkout_form" enctype="multipart/form-data">
                         
-                        {{ csrf_field() }}
-                        @endif
+                        <?php echo e(csrf_field()); ?>
+
+                        <?php endif; ?>
                         <div class="card">
                            
-                          <div class="col-md-6">
+                           
+                           
+                           <div class="col-md-8">
                            
                             <div class="card-body">
                                 <!-- Credit Card -->
@@ -100,49 +107,51 @@
                                         
                                             
                                             <div class="form-group">
-                                                <label for="name" class="control-label mb-1">{{ __('Name') }} <span class="require">*</span></label>
-                                                <input id="category_name" name="category_name" type="text" class="form-control" required>
-                                            </div>
-
-                                            <div class="form-group">
-                                                <label for="category_icon" class="control-label mb-1">{{ __('Icon') }} ({{ __('max') }} 24 x 24)<span class="require">*</span></label>
-                                                
-                                            <input type="file" id="category_icon" name="category_icon" class="form-control-file"  />
-                                            
+                                                <label for="name" class="control-label mb-1"><?php echo e(__('Price')); ?> (<?php echo e($allsettings->site_currency); ?>)<span class="require">*</span></label>
+                                                <input id="deposit_price" name="deposit_price" type="text" class="form-control" data-bvalidator="required,digit,min[1]">
                                             </div>
                                             
                                             <div class="form-group">
-                                                <label for="site_title" class="control-label mb-1"> {{ __('Status') }} <span class="require">*</span></label>
-                                                <select name="category_status" class="form-control" required>
+                                                <label for="name" class="control-label mb-1"><?php echo e(__('Bonus')); ?> (<?php echo e($allsettings->site_currency); ?>)</label>
+                                                <input id="deposit_bonus" name="deposit_bonus" type="text" class="form-control" data-bvalidator="digit,min[0]">
+                                            </div>
+                                            
+                                                                             
+                                            
+                                            <div class="form-group">
+                                                <label for="site_title" class="control-label mb-1"> <?php echo e(__('Status')); ?> <span class="require">*</span></label>
+                                                <select name="deposit_status" class="form-control" required>
                                                 <option value=""></option>
-                                                <option value="1">{{ __('Active') }}</option>
-                                                <option value="0">{{ __('InActive') }}</option>
+                                                <option value="1"><?php echo e(__('Active')); ?></option>
+                                                <option value="0"><?php echo e(__('InActive')); ?></option>
                                                 </select>
                                                 
-                                            </div> 
-                                                
-                                             <div class="form-group">
-                                                <label for="name" class="control-label mb-1">{{ __('Display Order') }}</label>
-                                                <input id="menu_order" name="menu_order" type="text" class="form-control">
                                             </div>   
-                                                
-                                        
+                                         
                                     </div>
                                 </div>
 
                             </div>
                             </div>
                             
-                            <div class="col-md-6">
-                            </div>
+                            
+                            
+                             <div class="col-md-6">
+                             
+                             
+                             
+                             
+                             </div>
                             
                             
                             <div class="card-footer">
                                                         <button type="submit" name="submit" class="btn btn-primary btn-sm">
-                                                            <i class="fa fa-dot-circle-o"></i> {{ __('Submit') }}
+                                                            <i class="fa fa-dot-circle-o"></i> <?php echo e(__('Submit')); ?>
+
                                                         </button>
                                                         <button type="reset" class="btn btn-danger btn-sm">
-                                                            <i class="fa fa-ban"></i> {{ __('Reset') }}
+                                                            <i class="fa fa-ban"></i> <?php echo e(__('Reset')); ?>
+
                                                         </button>
                                                     </div>
                                                     
@@ -163,15 +172,16 @@
 
 
     </div><!-- /#right-panel -->
-    @else
-    @include('admin.denied')
-    @endif
+    <?php else: ?>
+    <?php echo $__env->make('admin.denied', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+    <?php endif; ?>
     <!-- Right Panel -->
 
 
-   @include('admin.javascript')
+   <?php echo $__env->make('admin.javascript', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 
 
 </body>
 
 </html>
+<?php /**PATH C:\xampp\htdocs\Script\producxpartan\resources\views/admin/add-deposit.blade.php ENDPATH**/ ?>

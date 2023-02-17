@@ -1,3 +1,4 @@
+<?php echo $__env->make('version', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 <!doctype html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
@@ -16,7 +17,7 @@
     <?php echo $__env->make('admin.navigation', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 
     <!-- Right Panel -->
-    <?php if(in_array('items',$avilable)): ?>
+    <?php if(in_array('deposit',$avilable)): ?>
     <div id="right-panel" class="right-panel">
 
         
@@ -27,7 +28,7 @@
             <div class="col-sm-4">
                 <div class="page-header float-left">
                     <div class="page-title">
-                        <h1><?php echo e(__('Category')); ?></h1>
+                        <h1><?php echo e(__('Price Details')); ?></h1>
                     </div>
                 </div>
             </div>
@@ -35,7 +36,7 @@
                 <div class="page-header float-right">
                     <div class="page-title">
                         <ol class="breadcrumb text-right">
-                            <a href="<?php echo e(url('/admin/add-category')); ?>" class="btn btn-success btn-sm"><i class="fa fa-plus"></i> <?php echo e(__('Add Category')); ?></a>
+                            <a href="<?php echo e(url('/admin/add-deposit')); ?>" class="btn btn-success btn-sm"><i class="fa fa-plus"></i> <?php echo e(__('Add Price')); ?></a>
                         </ol>
                     </div>
                 </div>
@@ -71,40 +72,37 @@
                     <div class="col-md-12">
                         <div class="card">
                             <div class="card-header">
-                                <strong class="card-title"><?php echo e(__('Category')); ?></strong>
+                                <strong class="card-title"><?php echo e(__('Price Details')); ?></strong>
                             </div>
                             <div class="card-body">
                                 <table id="bootstrap-data-table-export" class="table table-striped table-bordered">
                                     <thead>
                                         <tr>
                                             <th><?php echo e(__('Sno')); ?></th>
-                                            <th><?php echo e(__('Name')); ?></th>
-                                            <th><?php echo e(__('Display Order')); ?></th>
-                                            <th><?php echo e(__('Image')); ?></th>
+                                            <th><?php echo e(__('Price')); ?></th>
+                                            <th><?php echo e(__('Bonus')); ?></th>
                                             <th><?php echo e(__('Status')); ?></th>
                                             <th><?php echo e(__('Action')); ?></th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                     <?php $no = 1; ?>
-                                    <?php $__currentLoopData = $categoryData['category']; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $category): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                                    <?php $__currentLoopData = $depositData['view']; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $deposit): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                                         <tr>
                                             <td><?php echo e($no); ?></td>
-                                            <td><?php echo e($category->category_name); ?></td>
-                                            <td><?php echo e($category->menu_order); ?></td>
-                                            <td>
-                                            <?php if($category->category_image != ''): ?>
-                                                <img class="lazy" width="24" height="24" src="<?php echo e(url('/')); ?>/public/storage/settings/<?php echo e($category->category_image); ?>" />
-                                                <?php endif; ?>
-                                           
-                                            </td>
-                                            <td><?php if($category->category_status == 1): ?> <span class="badge badge-success"><?php echo e(__('Active')); ?></span> <?php else: ?> <span class="badge badge-danger"><?php echo e(__('InActive')); ?></span> <?php endif; ?></td>
-                                            <td><a href="edit-category/<?php echo e($category->cat_id); ?>" class="btn btn-success btn-sm"><i class="fa fa-edit"></i>&nbsp; <?php echo e(__('Edit')); ?></a> 
+                                            <td><?php echo e($deposit->deposit_price); ?> </td>
+                                            <td><?php echo e($deposit->deposit_bonus); ?> </td>
+                                            <td><?php if($deposit->deposit_status == 1): ?> <span class="badge badge-success">Active</span> <?php else: ?> <span class="badge badge-danger">InActive</span> <?php endif; ?></td>
+                                            <td><a href="edit-deposit/<?php echo e($deposit->dep_id); ?>" class="btn btn-success btn-sm"><i class="fa fa-edit"></i>&nbsp; Edit</a> 
                                             <?php if($demo_mode == 'on'): ?> 
-                                            <a href="demo-mode" class="btn btn-danger btn-sm"><i class="fa fa-trash"></i>&nbsp;<?php echo e(__('Delete')); ?></a>
-                                            <?php else: ?> 
-                                            <a href="category/<?php echo e($category->cat_id); ?>" class="btn btn-danger btn-sm" onClick="return confirm('<?php echo e(__('Are you sure you want to delete')); ?>?');"><i class="fa fa-trash"></i>&nbsp;<?php echo e(__('Delete')); ?></a><?php endif; ?></td>
+                                            <a href="demo-mode" class="btn btn-danger btn-sm"><i class="fa fa-trash"></i>&nbsp;Delete</a>
+                                            <?php else: ?>
+                                            <a href="deposit/<?php echo e($deposit->dep_id); ?>" class="btn btn-danger btn-sm" onClick="return confirm('Are you sure you want to delete?');">
+                                            <i class="fa fa-trash"></i>&nbsp;Delete</a>
+                                            <?php endif; ?>
+                                            </td>
                                         </tr>
+                                        
                                         <?php $no++; ?>
                                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>     
                                         
@@ -114,7 +112,7 @@
                         </div>
                     </div>
 
-
+ 
                 </div>
             </div><!-- .animated -->
         </div><!-- .content -->
@@ -133,4 +131,4 @@
 </body>
 
 </html>
-<?php /**PATH C:\xampp\htdocs\Script\producxpartan\resources\views/admin/category.blade.php ENDPATH**/ ?>
+<?php /**PATH C:\xampp\htdocs\Script\producxpartan\resources\views/admin/deposit.blade.php ENDPATH**/ ?>

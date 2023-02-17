@@ -78,6 +78,7 @@
                                             <th>{{ __('Sno') }}</th>
                                             <th>{{ __('Name') }}</th>
                                             <th>{{ __('Display Order') }}</th>
+                                            <th>{{ __('Image') }}</th>
                                             <th>{{ __('Status') }}</th>
                                             <th>{{ __('Action') }}</th>
                                         </tr>
@@ -89,6 +90,12 @@
                                             <td>{{ $no }}</td>
                                             <td>{{ $category->category_name }}</td>
                                             <td>{{ $category->menu_order }}</td>
+                                            <td>
+                                            @if($category->category_image != '')
+                                                <img class="lazy" width="24" height="24" src="{{ url('/') }}/public/storage/settings/{{ $category->category_image }}" />
+                                                @endif
+                                           
+                                            </td>
                                             <td>@if($category->category_status == 1) <span class="badge badge-success">{{ __('Active') }}</span> @else <span class="badge badge-danger">{{ __('InActive') }}</span> @endif</td>
                                             <td><a href="edit-category/{{ $category->cat_id }}" class="btn btn-success btn-sm"><i class="fa fa-edit"></i>&nbsp; {{ __('Edit') }}</a> 
                                             @if($demo_mode == 'on') 

@@ -96,9 +96,7 @@
                                 <!-- Credit Card -->
                                 <div id="pay-invoice">
                                     <div class="card-body">
-                                       
-                                        
-                                            
+
                                             <div class="form-group">
                                                 <label for="name" class="control-label mb-1">{{ __('Title') }} <span class="require">*</span></label>
                                                 <input id="category_name" name="category_name" type="text" class="form-control" required>

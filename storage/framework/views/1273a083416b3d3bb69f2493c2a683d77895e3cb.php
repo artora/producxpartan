@@ -107,8 +107,15 @@
                                                 <label for="name" class="control-label mb-1"><?php echo e(__('Name')); ?> <span class="require">*</span></label>
                                                 <input id="category_name" name="category_name" type="text" class="form-control" required>
                                             </div>
+
+                                            <div class="form-group">
+                                                <label for="category_icon" class="control-label mb-1"><?php echo e(__('Icon')); ?> (<?php echo e(__('max')); ?> 24 x 24)<span class="require">*</span></label>
+                                                
+                                            <input type="file" id="category_icon" name="category_icon" class="form-control-file"  />
                                             
-                                             <div class="form-group">
+                                            </div>
+                                            
+                                            <div class="form-group">
                                                 <label for="site_title" class="control-label mb-1"> <?php echo e(__('Status')); ?> <span class="require">*</span></label>
                                                 <select name="category_status" class="form-control" required>
                                                 <option value=""></option>
